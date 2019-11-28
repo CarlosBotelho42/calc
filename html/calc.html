@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/calc.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div class="dimCalc">
+        <div class="visor">
+            <input type="text" id="visorCalc" class="visor1"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+        </div>
+        <div class="allButton">
+            <div class="linha-btn-1">
+                <button type="submit" class="Btn opeclear" id="Btn-Resete" onclick="limpar()">CE</button>
+                <button type="submit" class="Btn ope" id="Btn-factor" onclick="fatorial(factor)">!*</button>
+                <button type="submit" class="Btn ope" id="Btn-porcent" onclick="number('%')">%</button>
+                <button type="submit" class="Btn ope" id="Btn-div" value="/" onclick="number('/')">÷</button>
+            </div>
+
+            <div class="linha-btn-2">
+                <button type="submit" class="Btn num" id="Btn-7" value="7" onclick="number(7)">7</button>
+                <button type="submit" class="Btn num" id="Btn-8" value="8" onclick="number(8)">8</button>
+                <button type="submit" class="Btn num" id="Btn-9" value="9" onclick="number(9)">9</button>
+                <button type="submit" class="Btn ope" id="Btn-X" value="" onclick="number('')">x</button>
+            </div>
+
+            <div class="linha-btn-3">
+                <button type="submit" class="Btn num" id="Btn-4" value="4" onclick="number(4)">4</button>
+                <button type="submit" class="Btn num" id="Btn-5" value="5" onclick="number(5)">5</button>
+                <button type="submit" class="Btn num" id="Btn-6" value="6" onclick="number(6)">6</button>
+                <button type="submit" class="Btn ope" id="Btn-menos" onclick="number('-')">-</button>
+            </div>
+
+            <div class="linha-btn-4">
+                <button type="submit" class="Btn num" id="Btn-1" value="1" onclick="number(1)">1</button>
+                <button type="submit" class="Btn num" id="Btn-2" value="2" onclick="number(2)">2</button>
+                <button type="submit" class="Btn num" id="Btn-6" value="3" onclick="number(3)">3</button>
+                <button type="submit" class="Btn ope" id="Btn-mais" value="+" onclick="number('+')">+</button>
+
+            <div class="linha-btn-5">
+                    <button type="submit" class="Btn ope" id="Btn-raiz" onclick="raizQuadrada()">²√</button>
+                    <button type="submit" class="Btn num" id="Btn-0" value="0" onclick="number(0)">0</button>
+                    <button type="submit" class="Btn ope" id="Btn-igual" value="=" onclick="calcular()">=</button>
+                    <button type="submit" class="Btn ope" id="Btn-virgula">,</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="../js/calc.js"></script>
+
+</body>
+
+</html>
